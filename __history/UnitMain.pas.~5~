@@ -18,14 +18,12 @@ type
     N6: TMenuItem;
     N7: TMenuItem;
     N8: TMenuItem;
-    N9: TMenuItem;
     procedure N1Click(Sender: TObject);
     procedure N4Click(Sender: TObject);
     procedure N5Click(Sender: TObject);
     procedure N6Click(Sender: TObject);
     procedure N7Click(Sender: TObject);
     procedure N8Click(Sender: TObject);
-    procedure N9Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +35,7 @@ var
 
 implementation
 
-uses UnitBD, UnitKlient, UnitSotr, UnitUslug, UnitZHURNAL, UnitPALAT;
+uses UnitBD, UnitKlient, UnitSotr, UnitUslug, UnitZHURNAL;
 
 {$R *.dfm}
 
@@ -69,11 +67,6 @@ end;
 procedure TForm2.N8Click(Sender: TObject);
 begin
 Application.CreateForm(TFormZHURNAL,FormZHURNAL);
-end;
-
-procedure TForm2.N9Click(Sender: TObject);
-begin
-Application.CreateForm(TFormPALAT,FormPALAT);
 end;
 
 end.

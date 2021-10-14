@@ -233,34 +233,4 @@ object DataBD: TDataBD
     Left = 144
     Top = 200
   end
-  object ADOPalat: TADOTable
-    Active = True
-    Connection = ADOBOLNICA
-    CursorType = ctStatic
-    TableName = 'Palat'
-    Left = 424
-    Top = 144
-    object ADOPalatkod_palat: TAutoIncField
-      FieldName = 'kod_palat'
-      ReadOnly = True
-    end
-    object ADOPalatNpalat: TIntegerField
-      DisplayLabel = #1053#1086#1084#1077#1088' '#1087#1072#1083#1072#1090#1099
-      FieldName = 'Npalat'
-    end
-    object ADOPalatkolvoM: TIntegerField
-      DisplayLabel = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1084#1077#1089#1090
-      FieldName = 'kolvoM'
-    end
-  end
-  object ADOQuery1: TADOQuery
-    Parameters = <>
-    Left = 464
-    Top = 48
-  end
-  object DataPalat: TDataSource
-    DataSet = ADOPalat
-    Left = 424
-    Top = 200
-  end
 end

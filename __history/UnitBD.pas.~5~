@@ -50,12 +50,6 @@ type
     ADOQueryZapisbKlientfamily: TWideStringField;
     ADOQueryZapisbname_usl: TWideStringField;
     ADOQueryZapisbSotrudnikifamily: TWideStringField;
-    ADOPalat: TADOTable;
-    ADOQuery1: TADOQuery;
-    DataPalat: TDataSource;
-    ADOPalatkod_palat: TAutoIncField;
-    ADOPalatNpalat: TIntegerField;
-    ADOPalatkolvoM: TIntegerField;
   private
     { Private declarations }
   public

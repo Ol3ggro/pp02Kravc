@@ -12,7 +12,7 @@ uses
   UnitUslug1 in 'UnitUslug1.pas' {FormUslug1},
   UnitZHURNAL in 'UnitZHURNAL.pas' {FormZHURNAL},
   UnitZHURNAL1 in 'UnitZHURNAL1.pas' {FormZHURNAL1},
-  UnitPALAT in 'UnitPALAT.pas' {Form1};
+  UnitPALAT in 'UnitPALAT.pas' {FormPALAT};
 
 {$R *.res}
 
@@ -20,6 +20,5 @@ begin
   Application.Initialize;
   Application.CreateForm(TDataBD, DataBD);
   Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

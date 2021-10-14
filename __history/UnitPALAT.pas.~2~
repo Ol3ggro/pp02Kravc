@@ -4,13 +4,11 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, jpeg, ExtCtrls, Grids, DBGrids;
+  Dialogs, jpeg, ExtCtrls;
 
 type
-  TFormPALAT = class(TForm)
+  TForm1 = class(TForm)
     Image1: TImage;
-    DBGrid1: TDBGrid;
-    DBGrid2: TDBGrid;
   private
     { Private declarations }
   public
@@ -18,11 +16,9 @@ type
   end;
 
 var
-  FormPALAT: TFormPALAT;
+  Form1: TForm1;
 
 implementation
-
-uses UnitBD;
 
 {$R *.dfm}
 
