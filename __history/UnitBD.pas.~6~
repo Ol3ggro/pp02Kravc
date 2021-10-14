@@ -51,23 +51,11 @@ type
     ADOQueryZapisbname_usl: TWideStringField;
     ADOQueryZapisbSotrudnikifamily: TWideStringField;
     ADOPalat: TADOTable;
-    ADOQueryPalat: TADOQuery;
+    ADOQuery1: TADOQuery;
     DataPalat: TDataSource;
     ADOPalatkod_palat: TAutoIncField;
     ADOPalatNpalat: TIntegerField;
     ADOPalatkolvoM: TIntegerField;
-    ADOKlientkod_palat: TIntegerField;
-    DataSource1: TDataSource;
-    ADOQueryPalatkod_kl: TAutoIncField;
-    ADOQueryPalatnames: TWideStringField;
-    ADOQueryPalatfamily: TWideStringField;
-    ADOQueryPalatotch: TWideStringField;
-    ADOQueryPalatteleph: TIntegerField;
-    ADOQueryPalatdata_r: TDateTimeField;
-    ADOQueryPalatKlientkod_palat: TIntegerField;
-    ADOQueryPalatPalatkod_palat: TAutoIncField;
-    ADOQueryPalatNpalat: TIntegerField;
-    ADOQueryPalatkolvoM: TIntegerField;
   private
     { Private declarations }
   public

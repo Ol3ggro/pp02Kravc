@@ -16,19 +16,16 @@ object DataBD: TDataBD
     end
     object ADOKlientnames: TWideStringField
       DisplayLabel = #1048#1084#1103
-      DisplayWidth = 20
       FieldName = 'names'
       Size = 255
     end
     object ADOKlientfamily: TWideStringField
       DisplayLabel = #1060#1072#1084#1080#1083#1080#1103
-      DisplayWidth = 25
       FieldName = 'family'
       Size = 255
     end
     object ADOKlientotch: TWideStringField
       DisplayLabel = #1054#1090#1095#1077#1089#1090#1074#1086
-      DisplayWidth = 25
       FieldName = 'otch'
       Size = 255
     end
@@ -39,9 +36,6 @@ object DataBD: TDataBD
     object ADOKlientdata_r: TDateTimeField
       DisplayLabel = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103
       FieldName = 'data_r'
-    end
-    object ADOKlientkod_palat: TIntegerField
-      FieldName = 'kod_palat'
     end
   end
   object ADOSotr: TADOTable
@@ -259,61 +253,14 @@ object DataBD: TDataBD
       FieldName = 'kolvoM'
     end
   end
-  object ADOQueryPalat: TADOQuery
-    Active = True
-    Connection = ADOBOLNICA
-    CursorType = ctStatic
-    DataSource = DataKlient
+  object ADOQuery1: TADOQuery
     Parameters = <>
-    SQL.Strings = (
-      'select * from Klient, Palat'
-      '')
-    Left = 496
+    Left = 464
     Top = 48
-    object ADOQueryPalatkod_kl: TAutoIncField
-      FieldName = 'kod_kl'
-      ReadOnly = True
-    end
-    object ADOQueryPalatnames: TWideStringField
-      FieldName = 'names'
-      Size = 255
-    end
-    object ADOQueryPalatfamily: TWideStringField
-      FieldName = 'family'
-      Size = 255
-    end
-    object ADOQueryPalatotch: TWideStringField
-      FieldName = 'otch'
-      Size = 255
-    end
-    object ADOQueryPalatteleph: TIntegerField
-      FieldName = 'teleph'
-    end
-    object ADOQueryPalatdata_r: TDateTimeField
-      FieldName = 'data_r'
-    end
-    object ADOQueryPalatKlientkod_palat: TIntegerField
-      FieldName = 'Klient.kod_palat'
-    end
-    object ADOQueryPalatPalatkod_palat: TAutoIncField
-      FieldName = 'Palat.kod_palat'
-      ReadOnly = True
-    end
-    object ADOQueryPalatNpalat: TIntegerField
-      FieldName = 'Npalat'
-    end
-    object ADOQueryPalatkolvoM: TIntegerField
-      FieldName = 'kolvoM'
-    end
   end
   object DataPalat: TDataSource
     DataSet = ADOPalat
     Left = 424
     Top = 200
-  end
-  object DataSource1: TDataSource
-    DataSet = ADOQueryPalat
-    Left = 496
-    Top = 104
   end
 end

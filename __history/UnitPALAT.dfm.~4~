@@ -2,7 +2,7 @@ object FormPALAT: TFormPALAT
   Left = 0
   Top = 0
   Caption = #1057#1074#1077#1076#1077#1085#1100#1103' '#1086' '#1084#1077#1089#1090' '#1074' '#1087#1072#1083#1072#1090#1072#1093
-  ClientHeight = 426
+  ClientHeight = 424
   ClientWidth = 659
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -1356,18 +1356,17 @@ object FormPALAT: TFormPALAT
       159B7568D182403C57A6CD6B1B70EAAD59D75A1DB4BBB0307DAB452158FFD9}
   end
   object DBGrid1: TDBGrid
-    Left = 40
+    Left = 24
     Top = 24
-    Width = 593
+    Width = 561
     Height = 145
-    DataSource = DataBD.DataSource1
+    DataSource = DataBD.DataKlient
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
-    OnCellClick = DBGrid1CellClick
     Columns = <
       item
         Expanded = False
@@ -1377,16 +1376,19 @@ object FormPALAT: TFormPALAT
       item
         Expanded = False
         FieldName = 'names'
+        Width = 100
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'family'
+        Width = 150
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'otch'
+        Width = 120
         Visible = True
       end
       item
@@ -1397,17 +1399,13 @@ object FormPALAT: TFormPALAT
       item
         Expanded = False
         FieldName = 'data_r'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'kod_palat'
+        Width = 90
         Visible = True
       end>
   end
   object DBGrid2: TDBGrid
-    Left = 40
-    Top = 199
+    Left = 24
+    Top = 232
     Width = 265
     Height = 168
     DataSource = DataBD.DataPalat
@@ -1417,39 +1415,5 @@ object FormPALAT: TFormPALAT
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
-    Columns = <
-      item
-        Expanded = False
-        FieldName = 'kod_palat'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'Npalat'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'kolvoM'
-        Visible = True
-      end>
-  end
-  object DBNavigator1: TDBNavigator
-    Left = 43
-    Top = 168
-    Width = 588
-    Height = 25
-    DataSource = DataBD.DataKlient
-    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
-    TabOrder = 2
-  end
-  object Button1: TButton
-    Left = 558
-    Top = 376
-    Width = 75
-    Height = 25
-    Caption = #1042#1099#1093#1086#1076
-    TabOrder = 3
-    OnClick = Button1Click
   end
 end
